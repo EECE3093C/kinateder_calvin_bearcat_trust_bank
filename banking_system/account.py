@@ -1,8 +1,6 @@
 class Account:
     """A class representing a bank account."""
 
-    # todo: Add the following methods:
-    #       withdraw
     def __init__(self, account_number, account_holder_name, balance):
         """Initialize the account with the given account number, account holder name, and balance.
 
@@ -22,6 +20,17 @@ class Account:
             amount (float): The amount to deposit.
         """
         self.balance += amount
+
+    def withdraw(self, amount):
+        """Withdraw the given amount from the account.
+
+        Args:
+            amount (float): The amount to withdraw.
+        """
+        if amount <= self.balance:
+            self.balance -= amount
+        else:
+            print("Insufficient funds.")
 
     def get_balance(self):
         """Return the current balance of the account."""
