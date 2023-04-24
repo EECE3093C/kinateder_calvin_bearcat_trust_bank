@@ -6,6 +6,13 @@ class Account:
     #       deposit
     #       withdraw
     def __init__(self, account_number, account_holder_name, balance):
+        """Initialize the account with the given account number, account holder name, and balance.
+
+        Args:
+            account_number (str): The account number.
+            account_holder_name (str): The account holder name.
+            balance (float): The account balance.
+        """
         self.account_number = account_number
         self.account_holder_name = account_holder_name
         self.balance = balance
