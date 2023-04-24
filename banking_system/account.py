@@ -9,6 +9,7 @@ class Account:
         self.balance = balance
 
     def deposit(self, amount):
+        """Deposit the given amount into the account."""
         self.balance += amount
 
     def get_balance(self):
