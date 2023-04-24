@@ -16,7 +16,11 @@ class Account:
         self.balance = balance
 
     def deposit(self, amount):
-        """Deposit the given amount into the account."""
+        """Deposit the given amount into the account.
+
+        Args:
+            amount (float): The amount to deposit.
+        """
         self.balance += amount
 
     def get_balance(self):
